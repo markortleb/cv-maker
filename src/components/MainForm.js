@@ -14,6 +14,9 @@ class MainForm extends Component {
                 <PersonalInfoSection />
                 <ExperienceSection />
                 <EducationSection />
+                <button>Save as PDF</button>
+                <button>Load Example</button>
+                <button>Reset</button>
             </form>
         )
     }
