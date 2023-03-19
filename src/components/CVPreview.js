@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PersonalInfoPreview from "./PersonalInfoPreview";
 
 
 class CVPreview extends Component {
@@ -10,8 +11,7 @@ class CVPreview extends Component {
     render() {
         return (
             <div>
-                <h3>{this.props.personalInfo.firstName}</h3>
-                <h4>{this.props.personalInfo.lastName}</h4>
+                <PersonalInfoPreview personalInfo={this.props.personalInfo}/>
             </div>
         );
     }

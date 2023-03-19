@@ -3,26 +3,15 @@ import NavigationBar from "./components/NavigationBar";
 import MainForm from "./components/MainForm";
 import CVPreview from "./components/CVPreview";
 import {Component} from "react";
+import initEmpty from "./utility/initEmpty"
+import initExample from "./utility/initExample";
 
 
 class App extends Component {
     constructor(props) {
         super(props);
 
-        let personalInfo = {
-            firstName: '',
-            lastName: '',
-            title: '',
-            photo: '',
-            address: '',
-            phoneNumber: '',
-            email: '',
-            description: ''
-        };
-
-        this.state = {
-            personalInfo
-        }
+        this.state = initExample();
 
         this.handlePersonalInfoChange = this.handlePersonalInfoChange.bind(this);
     }
