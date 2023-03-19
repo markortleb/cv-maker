@@ -11,12 +11,12 @@ class MainForm extends Component {
     render() {
         return (
             <form>
-                <PersonalInfoSection />
-                <ExperienceSection />
-                <EducationSection />
-                <button>Save as PDF</button>
-                <button>Load Example</button>
-                <button>Reset</button>
+                <PersonalInfoSection handleInputChange={this.props.handlePersonalInfoChange}/>
+                {/*<ExperienceSection />*/}
+                {/*<EducationSection />*/}
+                {/*<button>Save as PDF</button>*/}
+                {/*<button>Load Example</button>*/}
+                {/*<button>Reset</button>*/}
             </form>
         )
     }
