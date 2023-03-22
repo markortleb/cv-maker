@@ -11,7 +11,10 @@ class MainForm extends Component {
     render() {
         return (
             <form>
-                <PersonalInfoSection handleInputChange={this.props.handlePersonalInfoChange}/>
+                <PersonalInfoSection
+                    personalInfo={this.props.personalInfo}
+                    handleInputChange={this.props.handlePersonalInfoChange}
+                />
                 {/*<ExperienceSection />*/}
                 {/*<EducationSection />*/}
                 {/*<button>Save as PDF</button>*/}

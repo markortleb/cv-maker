@@ -26,7 +26,10 @@ class App extends Component {
         return (
             <div>
                 <NavigationBar />
-                <MainForm handlePersonalInfoChange={this.handlePersonalInfoChange} />
+                <MainForm
+                    personalInfo={this.state.personalInfo}
+                    handlePersonalInfoChange={this.handlePersonalInfoChange}
+                />
                 <CVPreview personalInfo={this.state.personalInfo} />
             </div>
         );
