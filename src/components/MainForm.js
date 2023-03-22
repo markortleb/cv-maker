@@ -15,8 +15,14 @@ class MainForm extends Component {
                     personalInfo={this.props.personalInfo}
                     handleInputChange={this.props.handlePersonalInfoChange}
                 />
-                {/*<ExperienceSection />*/}
-                {/*<EducationSection />*/}
+                <ExperienceSection
+                    experience={this.props.experience}
+                    handleInputChange={this.props.handleExperienceChange}
+                />
+                <EducationSection
+                    education={this.props.education}
+                    handleInputChange={this.props.handleEducationChange}
+                />
                 {/*<button>Save as PDF</button>*/}
                 {/*<button>Load Example</button>*/}
                 {/*<button>Reset</button>*/}
