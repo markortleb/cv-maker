@@ -6,10 +6,10 @@ export default function initEmpty() {
             firstName: '',
             lastName: '',
             title: '',
-            photo: '',
-            address: '',
+            location: '',
             phoneNumber: '',
             email: '',
+            website: '',
             description: ''
         },
         experience: [
@@ -18,13 +18,14 @@ export default function initEmpty() {
                 company: '',
                 city: '',
                 from: '',
-                to: ''
+                to: '',
+                description: ''
             }
         ],
         education: [
             {
                 university: '',
-                city: '',
+                location: '',
                 degree: '',
                 subject: '',
                 from: '',

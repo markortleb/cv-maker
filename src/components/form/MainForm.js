@@ -2,6 +2,7 @@ import { Component } from 'react';
 import PersonalInfoSection from "./PersonalInfoSection";
 import ExperienceSection from "./ExperienceSection";
 import EducationSection from "./EducationSection";
+import '../../styles/form/MainForm.css'
 
 class MainForm extends Component {
     constructor(props) {
@@ -10,7 +11,7 @@ class MainForm extends Component {
 
     render() {
         return (
-            <form>
+            <form className="MainForm">
                 <PersonalInfoSection
                     personalInfo={this.props.personalInfo}
                     handleInputChange={this.props.handlePersonalInfoChange}

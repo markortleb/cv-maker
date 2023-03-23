@@ -1,10 +1,11 @@
-import './App.css';
+
 import NavigationBar from "./components/NavigationBar";
 import MainForm from "./components/form/MainForm";
 import CVPreview from "./components/preview/CVPreview";
 import {Component} from "react";
 import initEmpty from "./utility/initEmpty"
 import initExample from "./utility/initExample";
+import './styles/App.css';
 
 
 class App extends Component {
@@ -38,7 +39,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className="App">
                 <NavigationBar />
                 <MainForm
                     personalInfo={this.state.personalInfo}

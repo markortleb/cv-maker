@@ -1,0 +1,14 @@
+.NavigationBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2fa9bf;
+    padding: 1.5em;
+    box-shadow: 0 3px 3px #858585;
+}
+
+.NavigationBar h1 {
+    font-size: 3em;
+    font-family: "Arial";
+    font-weight: bold;
+}

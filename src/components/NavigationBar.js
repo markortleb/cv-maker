@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import '../styles/NavigationBar.css'
 
 class NavigationBar extends Component {
     constructor() {
@@ -7,7 +8,7 @@ class NavigationBar extends Component {
 
     render() {
         return (
-            <div>
+            <div className="NavigationBar">
                 <h1>CV Maker</h1>
             </div>
         );

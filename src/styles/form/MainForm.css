@@ -1,0 +1,4 @@
+.MainForm {
+    display: flex;
+    flex-direction: column;
+}
