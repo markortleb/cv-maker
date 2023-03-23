@@ -6,10 +6,10 @@ export default function initExample() {
             firstName: 'John',
             lastName: 'Doe',
             title: 'Data Engineer',
-            photo: '',
-            address: '11122 Main Drive, Denver, CO 82138',
+            location: 'Denver, CO',
             phoneNumber: '720-111-1111',
             email: 'johndoe127@gmail.com',
+            website: 'github.com/johndoe',
             description: 'I am a Data Engineer looking for a new challenge!'
         },
         experience: [
@@ -18,13 +18,22 @@ export default function initExample() {
                 company: 'Some Company',
                 city: 'Denver, CO',
                 from: '2020-02',
-                to: 'Present'
+                to: 'Present',
+                description: 'My duties included creating ETL pipelines and modeling data.'
+            },
+            {
+                position: 'Line Cook',
+                company: 'McDonald\'s',
+                city: 'Denver, CO',
+                from: '2015-01',
+                to: '2020-02',
+                description: 'I cooked delicious cheeseburgers.'
             }
         ],
         education: [
             {
                 university: 'University of Somewhere',
-                city: 'Denver, CO',
+                location: 'Denver, CO',
                 degree: 'BS',
                 subject: 'Computer Science',
                 from: '2010',

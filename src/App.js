@@ -1,7 +1,7 @@
 import './App.css';
 import NavigationBar from "./components/NavigationBar";
-import MainForm from "./components/MainForm";
-import CVPreview from "./components/CVPreview";
+import MainForm from "./components/form/MainForm";
+import CVPreview from "./components/preview/CVPreview";
 import {Component} from "react";
 import initEmpty from "./utility/initEmpty"
 import initExample from "./utility/initExample";
@@ -48,7 +48,11 @@ class App extends Component {
                     education={this.state.education}
                     handleEducationChange={this.handleEducationChange}
                 />
-                <CVPreview personalInfo={this.state.personalInfo} />
+                <CVPreview
+                    personalInfo={this.state.personalInfo}
+                    experience={this.state.experience}
+                    education={this.state.education}
+                />
             </div>
         );
     }
