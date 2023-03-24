@@ -19,9 +19,10 @@ class ExperiencePreview extends Component {
                         <div className="top">
                             <div className="left">
                                 <span className="position">{experience.position}</span>
+                                <span className="company">{experience.company}</span>
                             </div>
                             <div className="right">
-                                <span className="company">{experience.company}</span>
+                                <span className="city">{experience.city}</span>
                                 <div className="dateRange">
                                     <span className="from">{experience.from}</span>
                                     <span className="dash">-</span>

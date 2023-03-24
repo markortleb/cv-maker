@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 2em;
+    max-width: 1600px;
     gap: 0.25em;
 }
 

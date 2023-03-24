@@ -1,0 +1,58 @@
+.ExperiencePreview {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.ExperiencePreview h3 {
+    font-size: 1.4em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #2f3649;
+}
+
+.ExperiencePreview ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ExperiencePreview li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ExperiencePreview .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ExperiencePreview .top .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.ExperiencePreview .position {
+    color: #383c4b;
+    font-size: 1.05em;
+}
+
+.ExperiencePreview .top .right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.ExperiencePreview .dateRange {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+}
+
+.ExperiencePreview .bottom {
+    padding-left: 1em;
+    font-family: "Tibetan Machine Uni";
+}
