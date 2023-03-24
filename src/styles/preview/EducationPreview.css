@@ -1,0 +1,54 @@
+.EducationPreview {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.EducationPreview h3 {
+    font-size: 1.4em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #2f3649;
+}
+
+.EducationPreview li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.EducationPreview .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.EducationPreview .university {
+    color: #383c4b;
+    font-size: 1.05em;
+}
+
+.EducationPreview .top .right {
+    display: flex;
+    flex-direction: row;
+}
+
+.EducationPreview .location {
+    padding-right: 0.5em;
+}
+
+.EducationPreview .dateRange {
+    border-left: 1px solid black;
+    padding-left: 0.5em;
+}
+
+
+.EducationPreview .degree {
+    padding-right: 0.5em;
+}
+
+.EducationPreview .subject {
+    border-left: 1px solid black;
+    padding-left: 0.5em;
+}

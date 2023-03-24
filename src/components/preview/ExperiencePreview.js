@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "../../styles/preview/ExperiencePreview.css";
 
 
 class ExperiencePreview extends Component {
@@ -10,7 +11,7 @@ class ExperiencePreview extends Component {
         let experience = this.props.experience[0];
 
         return (
-            <div>
+            <div className="ExperiencePreview">
                 <h3>Work Experience</h3>
 
                 <ul>

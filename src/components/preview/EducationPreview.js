@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "../../styles/preview/EducationPreview.css";
 
 
 class EducationPreview extends Component {
@@ -10,7 +11,7 @@ class EducationPreview extends Component {
         let education = this.props.education[0];
 
         return (
-            <div>
+            <div className="EducationPreview">
                 <h3>Education</h3>
 
                 <ul>
@@ -28,7 +29,7 @@ class EducationPreview extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className="bottom">
                             <span className="degree">{education.degree}</span>
                             <span className="subject">{education.subject}</span>
                         </div>
