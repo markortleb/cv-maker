@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap');
+
+.CVPreview {
+    padding: 2em;
+    margin: 2em;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

@@ -1,0 +1,40 @@
+.PersonalInfoPreview {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.PersonalInfoPreview .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PersonalInfoPreview .top .left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.PersonalInfoPreview .name {
+    font-size: 2.5em;
+    font-family: 'Bona Nova', Serif;
+    color: #291c86;
+}
+
+.PersonalInfoPreview .title {
+    font-size: 1.5em;
+    color: #6c6c6c;
+}
+
+
+.PersonalInfoPreview .top .right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    font-family: Arial;
+    color: #5e6a7a;
+}
+
+.PersonalInfoPreview .bottom {
+    font-family: "Tibetan Machine Uni"
+}

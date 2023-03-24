@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "../../styles/preview/PersonalInfoPreview.css";
 
 
 class PersonalInfoPreview extends Component {
@@ -10,7 +11,7 @@ class PersonalInfoPreview extends Component {
         let personalInfo = this.props.personalInfo;
 
         return (
-            <div>
+            <div className="PersonalInfoPreview">
                 <div className="top">
                     <div className="left">
                         <h1 className="name">{`${personalInfo.firstName} ${personalInfo.lastName}`}</h1>
