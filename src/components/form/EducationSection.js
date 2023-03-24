@@ -20,7 +20,7 @@ class EducationSection extends Component {
                 <ul>
                     {this.props.education.map((education, index) => {
                         return (
-                            <li>
+                            <li key={education.id}>
                                 <div className="inputArea">
                                     <input type="text" placeholder="University" value={education.university} onChange={ e => this.handleInputChange(e, 'university', index)}/>
                                     <input type="text" placeholder="Location" value={education.location} onChange={ e => this.handleInputChange(e, 'location', index)}/>

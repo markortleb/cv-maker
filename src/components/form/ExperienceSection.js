@@ -19,7 +19,7 @@ class ExperienceSection extends Component {
                 <ul>
                     {this.props.experience.map((experience, index) => {
                         return (
-                            <li>
+                            <li key={experience.id}>
                                 <div className="inputArea">
                                     <input type="text" placeholder="Position" value={experience.position} onChange={ e => this.handleInputChange(e, 'position', index)}/>
                                     <input type="text" placeholder="Company" value={experience.company} onChange={ e => this.handleInputChange(e, 'company', index)}/>

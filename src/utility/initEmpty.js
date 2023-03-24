@@ -1,3 +1,4 @@
+import uniqid from 'uniqid';
 
 
 export default function initEmpty() {
@@ -14,6 +15,7 @@ export default function initEmpty() {
         },
         experience: [
             {
+                id: uniqid(),
                 position: '',
                 company: '',
                 city: '',
@@ -24,6 +26,7 @@ export default function initEmpty() {
         ],
         education: [
             {
+                id: uniqid(),
                 university: '',
                 location: '',
                 degree: '',

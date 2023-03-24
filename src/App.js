@@ -6,6 +6,8 @@ import {Component} from "react";
 import initEmpty from "./utility/initEmpty"
 import initExample from "./utility/initExample";
 import './styles/App.css';
+import html2canvas from "html2canvas";
+import {jsPDF} from 'jspdf';
 
 
 class App extends Component {
@@ -21,6 +23,7 @@ class App extends Component {
         this.handleDeleteButton = this.handleDeleteButton.bind(this);
         this.handleAddButton = this.handleAddButton.bind(this);
 
+        this.handleSaveAsPDFButton = this.handleSaveAsPDFButton.bind(this);
         this.handleLoadExampleButton = this.handleLoadExampleButton.bind(this);
         this.handleResetButton = this.handleResetButton.bind(this);
     }
@@ -56,6 +59,16 @@ class App extends Component {
         this.setState(curState);
     }
 
+    handleSaveAsPDFButton() {
+        const divToSave = document.querySelectorAll('.CVPreview')[0];
+        html2canvas(divToSave).then(canvas => {
+            const imgData = canvas.toDataURL('image/png');
+            const pdf = new jsPDF();
+            pdf.addImage(imgData, 'JPEG', 0, 0);
+            pdf.save("myCV.pdf");
+        });
+    }
+
     handleLoadExampleButton() {
         let curState = initExample();
         this.setState(curState);
@@ -79,6 +92,7 @@ class App extends Component {
                     handleEducationChange={this.handleEducationChange}
                     handleDeleteButton={this.handleDeleteButton}
                     handleAddButton={this.handleAddButton}
+                    handleSaveAsPDFButton={this.handleSaveAsPDFButton}
                     handleLoadExampleButton={this.handleLoadExampleButton}
                     handleResetButton={this.handleResetButton}
                 />

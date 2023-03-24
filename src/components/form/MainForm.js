@@ -28,7 +28,7 @@ class MainForm extends Component {
                     handleDeleteButton={this.props.handleDeleteButton}
                     handleAddButton={this.props.handleAddButton}
                 />
-                <button type="button">Save as PDF</button>
+                <button type="button" onClick={this.props.handleSaveAsPDFButton}>Save as PDF</button>
                 <button type="button" onClick={this.props.handleLoadExampleButton}>Load Example</button>
                 <button type="button" onClick={this.props.handleResetButton}>Reset</button>
             </form>

@@ -8,7 +8,6 @@ class ExperiencePreview extends Component {
     }
 
     render() {
-        let experience = this.props.experience[0];
 
         return (
             <div className="ExperiencePreview">
@@ -17,7 +16,7 @@ class ExperiencePreview extends Component {
                 <ul>
                     {this.props.experience.map(experience => {
                         return (
-                            <li>
+                            <li key={experience.id}>
                                 <div className="top">
                                     <div className="left">
                                         <span className="position">{experience.position}</span>

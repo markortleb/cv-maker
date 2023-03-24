@@ -1,3 +1,4 @@
+import uniqid from "uniqid";
 
 
 export default function initExample() {
@@ -14,6 +15,7 @@ export default function initExample() {
         },
         experience: [
             {
+                id: uniqid(),
                 position: 'Data Engineer',
                 company: 'Some Company',
                 city: 'Denver, CO',
@@ -22,6 +24,7 @@ export default function initExample() {
                 description: 'My duties included creating ETL pipelines and modeling data.'
             },
             {
+                id: uniqid(),
                 position: 'Line Cook',
                 company: 'McDonald\'s',
                 city: 'Denver, CO',
@@ -32,6 +35,7 @@ export default function initExample() {
         ],
         education: [
             {
+                id: uniqid(),
                 university: 'University of Somewhere',
                 location: 'Denver, CO',
                 degree: 'BS',

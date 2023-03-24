@@ -15,7 +15,7 @@ class EducationPreview extends Component {
                 <ul>
                     {this.props.education.map(education => {
                         return (
-                            <li>
+                            <li key={education.id}>
                                 <div className="top">
                                     <div className="left">
                                         <span className="university">{education.university}</span>
