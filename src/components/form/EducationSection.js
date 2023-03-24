@@ -29,12 +29,12 @@ class EducationSection extends Component {
                                     <input type="text" placeholder="From" value={education.from} onChange={ e => this.handleInputChange(e, 'from', index)}/>
                                     <input type="text" placeholder="To" value={education.to} onChange={ e => this.handleInputChange(e, 'to', index)}/>
                                 </div>
-                                <button type="button">Delete</button>
+                                <button type="button" onClick={e => this.props.handleDeleteButton('education', index)}>Delete</button>
                             </li>
                         );
                     })}
                 </ul>
-                <button type="button">Add</button>
+                <button type="button" onClick={e => this.props.handleAddButton('education')}>Add</button>
             </fieldset>
         )
     }

@@ -12,11 +12,17 @@ class App extends Component {
     constructor(props) {
         super(props);
 
-        this.state = initExample();
+        this.state = initEmpty();
 
         this.handlePersonalInfoChange = this.handlePersonalInfoChange.bind(this);
         this.handleExperienceChange = this.handleExperienceChange.bind(this);
         this.handleEducationChange = this.handleEducationChange.bind(this);
+
+        this.handleDeleteButton = this.handleDeleteButton.bind(this);
+        this.handleAddButton = this.handleAddButton.bind(this);
+
+        this.handleLoadExampleButton = this.handleLoadExampleButton.bind(this);
+        this.handleResetButton = this.handleResetButton.bind(this);
     }
 
     handlePersonalInfoChange(inputValue, keyName) {
@@ -37,6 +43,29 @@ class App extends Component {
         this.setState(curState);
     }
 
+    handleDeleteButton(arrayName, index) {
+        let curState = this.state;
+        curState[arrayName].splice(index, 1);
+        this.setState(curState);
+    }
+
+    handleAddButton(arrayName) {
+        let curState = this.state;
+        let blankState = initEmpty();
+        curState[arrayName].push(blankState[arrayName][0]);
+        this.setState(curState);
+    }
+
+    handleLoadExampleButton() {
+        let curState = initExample();
+        this.setState(curState);
+    }
+
+    handleResetButton() {
+        let curState = initEmpty();
+        this.setState(curState);
+    }
+
     render() {
         return (
             <div className="App">
@@ -48,6 +77,10 @@ class App extends Component {
                     handleExperienceChange={this.handleExperienceChange}
                     education={this.state.education}
                     handleEducationChange={this.handleEducationChange}
+                    handleDeleteButton={this.handleDeleteButton}
+                    handleAddButton={this.handleAddButton}
+                    handleLoadExampleButton={this.handleLoadExampleButton}
+                    handleResetButton={this.handleResetButton}
                 />
                 <CVPreview
                     personalInfo={this.state.personalInfo}

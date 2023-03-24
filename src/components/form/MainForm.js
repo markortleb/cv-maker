@@ -19,14 +19,18 @@ class MainForm extends Component {
                 <ExperienceSection
                     experience={this.props.experience}
                     handleInputChange={this.props.handleExperienceChange}
+                    handleDeleteButton={this.props.handleDeleteButton}
+                    handleAddButton={this.props.handleAddButton}
                 />
                 <EducationSection
                     education={this.props.education}
                     handleInputChange={this.props.handleEducationChange}
+                    handleDeleteButton={this.props.handleDeleteButton}
+                    handleAddButton={this.props.handleAddButton}
                 />
                 <button type="button">Save as PDF</button>
-                <button type="button">Load Example</button>
-                <button type="button">Reset</button>
+                <button type="button" onClick={this.props.handleLoadExampleButton}>Load Example</button>
+                <button type="button" onClick={this.props.handleResetButton}>Reset</button>
             </form>
         )
     }

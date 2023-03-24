@@ -28,13 +28,13 @@ class ExperienceSection extends Component {
                                     <input type="text" placeholder="To" value={experience.to} onChange={ e => this.handleInputChange(e, 'to', index)}/>
                                     <input type="text" placeholder="Description" value={experience.description} onChange={ e => this.handleInputChange(e, 'description', index)}/>
                                 </div>
-                                <button type="button">Delete</button>
+                                <button type="button" onClick={e => this.props.handleDeleteButton('experience', index)}>Delete</button>
                             </li>
                         );
                     })}
                 </ul>
 
-                <button type="button">Add</button>
+                <button type="button" onClick={e => this.props.handleAddButton('experience')}>Add</button>
             </fieldset>
         )
     }
