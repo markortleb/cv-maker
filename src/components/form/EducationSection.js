@@ -7,27 +7,34 @@ class EducationSection extends Component {
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
-    handleInputChange(e, keyName) {
+    handleInputChange(e, keyName, index) {
         const inputValue = e.target.value;
-        this.props.handleInputChange(inputValue, keyName);
+        this.props.handleInputChange(inputValue, keyName, index);
     }
 
     render() {
-        let education = this.props.education[0];
 
         return (
             <fieldset>
                 <legend>Education</legend>
-                <div className="inputArea">
-                    <input type="text" placeholder="University" value={education.university} onChange={ e => this.handleInputChange(e, 'university')}/>
-                    <input type="text" placeholder="Location" value={education.location} onChange={ e => this.handleInputChange(e, 'location')}/>
-                    <input type="text" placeholder="Degree" value={education.degree} onChange={ e => this.handleInputChange(e, 'degree')}/>
-                    <input type="text" placeholder="Subject" value={education.subject} onChange={ e => this.handleInputChange(e, 'subject')}/>
-                    <input type="text" placeholder="From" value={education.from} onChange={ e => this.handleInputChange(e, 'from')}/>
-                    <input type="text" placeholder="To" value={education.to} onChange={ e => this.handleInputChange(e, 'to')}/>
-                </div>
-                <button>Delete</button>
-                <button>Add</button>
+                <ul>
+                    {this.props.education.map((education, index) => {
+                        return (
+                            <li>
+                                <div className="inputArea">
+                                    <input type="text" placeholder="University" value={education.university} onChange={ e => this.handleInputChange(e, 'university', index)}/>
+                                    <input type="text" placeholder="Location" value={education.location} onChange={ e => this.handleInputChange(e, 'location', index)}/>
+                                    <input type="text" placeholder="Degree" value={education.degree} onChange={ e => this.handleInputChange(e, 'degree', index)}/>
+                                    <input type="text" placeholder="Subject" value={education.subject} onChange={ e => this.handleInputChange(e, 'subject', index)}/>
+                                    <input type="text" placeholder="From" value={education.from} onChange={ e => this.handleInputChange(e, 'from', index)}/>
+                                    <input type="text" placeholder="To" value={education.to} onChange={ e => this.handleInputChange(e, 'to', index)}/>
+                                </div>
+                                <button type="button">Delete</button>
+                            </li>
+                        );
+                    })}
+                </ul>
+                <button type="button">Add</button>
             </fieldset>
         )
     }

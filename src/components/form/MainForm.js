@@ -24,9 +24,9 @@ class MainForm extends Component {
                     education={this.props.education}
                     handleInputChange={this.props.handleEducationChange}
                 />
-                <button>Save as PDF</button>
-                <button>Load Example</button>
-                <button>Reset</button>
+                <button type="button">Save as PDF</button>
+                <button type="button">Load Example</button>
+                <button type="button">Reset</button>
             </form>
         )
     }

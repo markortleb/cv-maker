@@ -11,6 +11,12 @@
     color: #2f3649;
 }
 
+.EducationPreview ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .EducationPreview li {
     display: flex;
     flex-direction: column;

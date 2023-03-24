@@ -25,15 +25,15 @@ class App extends Component {
         this.setState(curState);
     }
 
-    handleExperienceChange(inputValue, keyName) {
+    handleExperienceChange(inputValue, keyName, index) {
         let curState = this.state;
-        curState['experience'][0][keyName] = inputValue;
+        curState['experience'][index][keyName] = inputValue;
         this.setState(curState);
     }
 
-    handleEducationChange(inputValue, keyName) {
+    handleEducationChange(inputValue, keyName, index) {
         let curState = this.state;
-        curState['education'][0][keyName] = inputValue;
+        curState['education'][index][keyName] = inputValue;
         this.setState(curState);
     }
 
