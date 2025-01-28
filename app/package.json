@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "host": "HOST=localhost PORT=8011 react-scripts start"
+    "host-dev": "HOST=localhost PORT=8002 react-scripts start",
+    "host-prod": "HOST=0.0.0.0 PORT=80 react-scripts start"
   },
   "eslintConfig": {
     "extends": [
